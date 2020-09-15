@@ -1,0 +1,39 @@
+//import carrera.*
+import coches.*
+import clase_coche.*
+
+
+program abc {
+	
+	// ---------- Instanciación sin parametros ----------
+	
+	// Ejemplo de que el IDE no me deja crear objetos inconsistentes porque falta inicializar color
+	//var coche_toreto_1 = new Coche() 
+	
+	// ---------- Instanciacion con parametros ----------
+	
+	// Solo inicializando el valor del parametro que no tiene valor por defecto
+	var coche_toreto_2 = new Coche(color="rojo")
+	
+	// Dando todos los valores iniciales
+	var coche_toreto_3 = new Coche(color="negro",velocidad=4,potenciaMotor=6,tanquesDeNitrogeno=3,distanciaRecorrida=0)
+	
+	// Dando todos los valores pero sin orden especifico
+	var coche_toreto_4 = new Coche(velocidad=4,distanciaRecorrida=0,potenciaMotor=6,color="negro",tanquesDeNitrogeno=3)
+	
+	// Usando algunos valores por defecto y otros inicializados
+	var coche_toreto_5 = new Coche(velocidad=4,distanciaRecorrida=0,color="rojo")
+	
+	/*  Puede utilizarse el archivo carrera.wkl para que brian y toreto usen estos objetos, corran carreras
+	 *  e intercambien los autos
+	*/
+	
+	// Method lookup
+	coche_toreto_2.arrancar()
+	// Se buscaria en el objeto coche_toreto_2 si existe el mensaje arrancar
+	// Si no existe sube un nivel y busca el metodo en la clase que pertenece si es que pertenece a una
+	// Si no encuentra el metodo en la clase busca en otro nivel (cuando veamos herencia)
+	// Si no lo encuentra en ese ultimo nivel, dice que no entiende el mensaje
+	// Si lo encuentra en la clase, ejecuta el metodo para reponder el mensaje que le mandaron
+	
+}
