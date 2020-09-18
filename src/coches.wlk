@@ -17,13 +17,12 @@ object mitsubishiLancer{
 	}
 	
 	method desacelerar(decrementoVelocidad){
-		velocidad -= decrementoVelocidad * potenciaMotor
-		self.desplazarme()
+		self.acelerar( decrementoVelocidad*(-1))
 	}
 	
 	method usarNitro(){
 		if(self.quedaNitro()){
-			tanquesDeNitrogeno--
+			tanquesDeNitrogeno -= 1
 			potenciaMotor *= 2
 			self.acelerar(2)
 		}
@@ -41,7 +40,7 @@ object mitsubishiLancer{
 	}
 	
 	method agregarTanque(){
-		tanquesDeNitrogeno++
+		tanquesDeNitrogeno += 1
 	}
 	
 	method cuantoRecorri() = distanciaRecorrida
@@ -67,12 +66,12 @@ object dodgeCharger{
 	}
 	
 	method desacelerar(decrementoVelocidad){
-		velocidad -= decrementoVelocidad * potenciaMotor
+		self.acelerar( decrementoVelocidad*(-1))
 	}
 	
 	method usarNitro(){
 		if(self.quedaNitro()){
-			tanquesDeNitrogeno--
+			tanquesDeNitrogeno -=1 
 			potenciaMotor *= 2
 			self.acelerar(2)
 		}
@@ -90,7 +89,7 @@ object dodgeCharger{
 	}
 	
 	method agregarTanque(){
-		tanquesDeNitrogeno++
+		tanquesDeNitrogeno += 1
 	}
 	
 	method cuantoRecorri() = distanciaRecorrida

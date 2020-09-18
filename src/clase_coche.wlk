@@ -17,8 +17,7 @@ class Coche {
 	}
 	
 	method desacelerar(decrementoVelocidad){
-		velocidad -= decrementoVelocidad * potenciaMotor
-		self.desplazarme()
+		self.acelerar( decrementoVelocidad*(-1))
 	}
 	
 	method usarNitro(){
