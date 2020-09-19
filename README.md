@@ -21,7 +21,7 @@ Solución con conceptos previos: con objetos autodefinidos y lógica repetida: c
 Nueva solución: con objetos como instancias de Clases: clase_coche.wlk
 
 
-[Video de la clase](https://youtu.be/ClfJ_fNxj_s)
-[Presentacion](https://drive.google.com/file/d/1ZGWEYsNkcgnvl-jqtjlz-pAsTQIV8kH9/view?usp=sharing)
+* [Video de la clase](https://youtu.be/ClfJ_fNxj_s)
+* [Presentacion](https://drive.google.com/file/d/1ZGWEYsNkcgnvl-jqtjlz-pAsTQIV8kH9/view?usp=sharing)
 
 
